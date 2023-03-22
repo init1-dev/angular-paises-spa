@@ -25,6 +25,7 @@ export class PorPaisComponent {
       this.paisService.buscar('name', this.termino )
         .subscribe({
           next: (paises) => {
+            console.log(paises)
             this.paises = paises;
           },
           error: (err) => {

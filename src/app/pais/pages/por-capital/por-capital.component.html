@@ -1,19 +1,21 @@
-<h2>Por capital:</h2>
-<hr>
+<div class="animate__animated animate__fadeIn animate__faster">
+    <h2>Por capital:</h2>
+    <hr>
 
-<div class="row">
-    <div class="col">
-        <app-pais-input 
-            placeholder="Buscar capital..."
-            (onEnter)="buscar( $event )">
-        </app-pais-input>
+    <div class="row">
+        <div class="col">
+            <app-pais-input 
+                placeholder="Buscar capital..."
+                (onEnter)="buscar( $event )">
+            </app-pais-input>
+        </div>
     </div>
+
+    <hr>
 </div>
 
-<hr>
-
 <div *ngIf="hayError"
-    class="alert alert-danger">
+    class="alert alert-danger animate__animated animate__fadeIn animate__faster">
     No se encontró nada con el término "{{ termino }}"
 </div>
 

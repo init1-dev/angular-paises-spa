@@ -26,7 +26,7 @@ export class VerPaisComponent implements OnInit {
         switchMap( ( params ) => this.paisService.getPais( params['id'] ) ),
         tap( console.log )
       )
-      .subscribe( pais => { this.pais = pais[0] })
+      .subscribe( pais => { this.pais = pais })
     
     // this.activatedRoute.params
     //   .subscribe( params => {
